@@ -6,6 +6,18 @@ using DecimalPrettyPrint.Helpers;
 
 namespace DecimalPrettyPrint {
     public static class customDecimal { //extension class for handling custom decimal modifications
+        /// <summary>
+        /// Flattens a list of char to a single string.
+        /// </summary>
+        /// <param name="charItems">List of char</param>
+        /// <returns>Single string value</returns>
+        public static string flatten(this List<char> charItems) {
+            var flattenedString = new StringBuilder();
+            charItems.ForEach(item => {
+                flattenedString.Append(item);
+            });
+            return flattenedString.ToString();
+        }
 
         /// <summary>
         /// Gets a subset from a list, starting from the left, of char and returns it as a string.
