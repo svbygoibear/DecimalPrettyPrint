@@ -7,6 +7,7 @@ This library can be used to convert an integer to a pretty printed decimal numbe
 Devise a function that takes an input 'n' (integer) and returns a string that is the decimal representation of that number grouped by commas after every 3 digits. You CAN NOT solve the task using a built-in formatting function that can accomplish the whole task on its own.
 
 ###Example Output
+```
 1 -> "1"
 10 -> "10"
 100 -> "100"
@@ -15,6 +16,7 @@ Devise a function that takes an input 'n' (integer) and returns a string that is
 100000 -> "100,000"
 1000000 -> "1,000,000"
 35235235 -> "35,235,235"
+```
 
 ###Assumptions
 From the instructions given, the following assumptions can be deducted from it:
