@@ -21,7 +21,22 @@ From the instructions given, the following assumptions can be deducted from it:
 - 0 <= n < 1000000000
 
 ###Code Snippet
-ToDo.
+In this example we have a collection of integer values:
+```javascript
+var inputs = new List<int> { 1, 10, 100, 1000, 10000, 100000, 1000000, 35235235 };
+```
+
+From this we can generate a new list of string with the formatted values:
+```javascript
+var result = new List<string>();
+
+inputs.ForEach(input => {
+    result.Add(input.decimalPrettyPrint());
+}); 
+```
+
+This will output the same as in the example.
+
 
 ##Installation
 To run this app, you'll need .NET 4.5 or higher installed on your machine, and to open up the project file you'll need Visual Studio. Other than that, no installation required. Microsoft .NET Framework 4.5 can be installed by downloading it from the microsoft website.
@@ -31,11 +46,11 @@ Feel free to pop me a message or flag an issue if you come across it - I'll see 
 
 ##License
 
-Copyright � `2016` `Simone van Buuren`
+Copyright © `2016` `Simone van Buuren`
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
-files (the �Software�), to deal in the Software without
+files (the “Software”), to deal in the Software without
 restriction, including without limitation the rights to use,
 copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the
@@ -45,7 +60,7 @@ conditions:
 The above copyright notice and this permission notice shall be
 included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED �AS IS�, WITHOUT WARRANTY OF ANY KIND,
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
 OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
 NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
